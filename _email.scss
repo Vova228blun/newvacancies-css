@@ -1,0 +1,55 @@
+.newvacancies {
+  @include flexCenter();
+  flex-direction: column;
+  height: 421px;
+  width: 390px;
+  background: #f2f3f6;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.newvacancies-text {
+  @include flexCenter();
+  flex-direction: column;
+  text-align: center;
+  h2 {
+    @include textStyle(900, 24px, 29px);
+    color: #111238;
+    width: 290px;
+    padding-bottom: 19px;
+  }
+  p {
+    @include textStyle(400, 18px, 140%);
+    width: 290px;
+    padding-bottom: 30px;
+  }
+  form {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 290px;
+  }
+  input {
+    @include textStyle(400, 16px, 19px);
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 25px 25px 25px;
+  }
+  button {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 68px;
+    height: 45px;
+    border-radius: 5px;
+    background: #1a75e8;
+    border: none;
+    outline: none;
+  }
+  padding-bottom: 70px;
+}
